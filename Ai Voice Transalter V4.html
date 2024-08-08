@@ -126,12 +126,15 @@
             background-color: #f3e5f5;
             position: relative;
         }
-        .icons {
-            position: absolute;
-            top: 10px;
-            right: 10px;
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
         }
-        .speaker-icon, .copy-icon {
+
+        .icons {
             cursor: pointer;
             margin-left: 10px;
             color: blue;
@@ -173,25 +176,25 @@
                 <p id="result-urdu"></p>
             </div>
             <div class="result-container" id="result-container-english">
-                <div class="icons">
-                    <span class="speaker-icon" id="speaker-icon-english">&#128264;</span>
-                    <span class="copy-icon" id="copy-icon-english">&#128203;</span>
-                </div>
                 <p id="result-english"></p>
+                <div class="icon-container">
+                    <span class="icons speaker-icon" id="speaker-icon-english">&#128264;</span>
+                    <span class="icons copy-icon" id="copy-icon-english">&#128203;</span>
+                </div>
             </div>
             <div class="result-container" id="result-container-arabic">
-                <div class="icons">
-                    <span class="speaker-icon" id="speaker-icon-arabic">&#128264;</span>
-                    <span class="copy-icon" id="copy-icon-arabic">&#128203;</span>
-                </div>
                 <p id="result-arabic"></p>
+                <div class="icon-container">
+                    <span class="icons speaker-icon" id="speaker-icon-arabic">&#128264;</span>
+                    <span class="icons copy-icon" id="copy-icon-arabic">&#128203;</span>
+                </div>
             </div>
             <div class="result-container" id="result-container-pashto">
-                <div class="icons">
-                    <span class="speaker-icon" id="speaker-icon-pashto">&#128264;</span>
-                    <span class="copy-icon" id="copy-icon-pashto">&#128203;</span>
-                </div>
                 <p id="result-pashto"></p>
+                <div class="icon-container">
+                    <span class="icons speaker-icon" id="speaker-icon-pashto">&#128264;</span>
+                    <span class="icons copy-icon" id="copy-icon-pashto">&#128203;</span>
+                </div>
             </div>
         </div>
     </div>
